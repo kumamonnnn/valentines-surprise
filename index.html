@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CUSTOMIZE: Change the page title -->
+  <title>haii</title>
+
+  <!-- CUSTOMIZE: Update the favicon path/filename as needed -->
+  <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="32x32">
+
+  <!-- Link to your stylesheet - don't change unless you rename style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CUSTOMIZE: You can add Google Fonts or other resources here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- CUSTOMIZE: Change the header text -->
+      <h1>words from duffy:</h1>
+
+      <div class="shrink-close-icons">
+        <!-- CUSTOMIZE: Update icon paths/filenames as needed -->
+        <img src="./assets/shrink-icon.png" alt="Shrink Icon" class="shrink-icon" />
+        <img src="./assets/close-icon.png" alt="Close Icon" class="shrink-icon" />
+      </div>
+    </header>
+
+    <div class="inner-container">
+      <!-- Animation and text container -->
+      <div class="animation-container">
+    <!-- Pixel art (shown first) -->
+        <div class="pixelart-to-css"></div>
+
+    <!-- Text container (hidden initially) -->
+    <div class="typewriter-text"></div>
+  </div>
+
+      <!-- CUSTOMIZE: Change the button text -->
+      <button id="main-button">Click!</button>
+
+      <!-- CUSTOMIZE: Change the final message text -->
+      <div class="final-message">did you click too many times?</div>
+    </div>
+  </div>
+
+  <!-- POST-BLACKOUT SEQUENCE - Add your images/animations here -->
+
+    <div class = "sequence-item making-cake" id="sequence-1">
+    <div class="sequence-text above">just kidding 🐭 ratatouille made munchi for you!</div>
+    <img src="./assets/image-content/image-1.png" alt="" class="rat-image"/>
+  </div>
+
+  <img src="./assets/image-content/image-2.png" alt="" class="sequence-item" id="sequence-2" />
+  <img src="./assets/image-content/animation-1.gif" alt="" class="sequence-item" id="sequence-3" />
+
+  <!-- Candle that needs to be blown out -->
+  <div class="sequence-item candle-sequence" id="sequence-4">
+    <div class="sequence-text above">make a wish and blow out the candle! 🎂</div>
+    <img src="./assets/image-content/animation-2.gif" alt="" class="candle-image" />
+    <div class="blow-meter">
+      <div class="blow-meter-fill"></div>
+    </div>
+
+  </div>
+
+  <!-- Extinguished candle (shown after blowing) -->
+   <img src="./assets/image-content/animation-3.gif" alt="" class="sequence-item" id="sequence-5"/>
+
+  <div class="sequence-item" id="sequence-6">
+    <div class="sequence-text">yayy you did it! 🎉</div>
+  </div>
+
+  <div class="sequence-item" id="sequence-7">
+    <div class="sequence-text">also,</div>
+  </div>
+
+  <div class="sequence-item" id="sequence-8">
+    <img src="./assets/favicon.png" alt="" class="favicon-image" />
+    <div class="sequence-text">happy valentines🧸</div>
+  </div>
+
+  <!-- Blackout Overlay -->
+  <div class="blackout-overlay"></div>
+
+  <!-- Link to your JavaScript - don't change unless you rename index.js -->
+  <script src="index.js"></script>
+
+</body>
+</html>
